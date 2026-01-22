@@ -113,13 +113,7 @@ Thumbs.db
 .env.*.local
 
 # ----- agents -----
-2_ai-browser/
-3_Autodroid/
-6-AppAgent/
-7-DroidBot-GPT/
-8-MobileGPT/
-13-MC-Planner/
-18-DriveLikeAHuman/
+agents/
 
 # ----- dataset -----
 dataset/*.xlsx
