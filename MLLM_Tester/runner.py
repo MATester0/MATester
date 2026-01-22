@@ -88,19 +88,9 @@ class Runner():
 		self.runtime.record_start_time()
 		try:
 			if apk_id == None:
-				result = subprocess.run(
-					[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE)],
-					shell=True,
-					check=True,           # if return 0 then throw execption
-					capture_output=True,  # catch outputs
-					text=True,            # return textual format
-					encoding='utf-8',
-					cwd= working_dir# working directory
-				)
-			else:
-				if task_name != None:
+				if task_name == None:
 					result = subprocess.run(
-						[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE), apk_id],
+						[self.git_bash_path, script_path, self.output_path, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE)],
 						shell=True,		  # do not use shell for safety
 						check=True,           # if return 0 then throw execption
 						capture_output=True,  # catch outputs
@@ -110,14 +100,25 @@ class Runner():
 					)
 				else:
 					result = subprocess.run(
-						[self.git_bash_path, script_path, self.output_path, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE), apk_id],
-						shell=True,		  # do not use shell for safety
+						[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE)],
+						shell=True,
 						check=True,           # if return 0 then throw execption
 						capture_output=True,  # catch outputs
 						text=True,            # return textual format
 						encoding='utf-8',
 						cwd= working_dir# working directory
 					)
+			else:
+				assert(task_name != None)
+				result = subprocess.run(
+					[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE), apk_id],
+					shell=True,		  # do not use shell for safety
+					check=True,           # if return 0 then throw execption
+					capture_output=True,  # catch outputs
+					text=True,            # return textual format
+					encoding='utf-8',
+					cwd= working_dir# working directory
+				)	
 		except subprocess.CalledProcessError as e:
 			if e.returncode == 124:
 				self.logger.info("execution timeout!")
