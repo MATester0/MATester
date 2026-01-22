@@ -13,7 +13,7 @@ def validate_id_exists(value):
 	"""
 	try:
 		id = int(value)
-		if id not in [2, 3, 6, 7, 8]:
+		if id not in [2, 3, 6, 7, 8, 18]:
 			raise argparse.ArgumentTypeError(f"agent id {id} is not available")
 		return id
 	except ValueError:
