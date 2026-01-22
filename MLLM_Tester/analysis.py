@@ -378,7 +378,7 @@ class Analysis():
 		task = runTime.get_task_name()
 		prompt = PROMPT_QUALITY_PROMPT % (prompt_file.get_content())
 		if task != None:
-			prompt += "The task that this prompt should describe is:\n'''\n{task}\n'''"
+			prompt += f"The task that this prompt should describe is:\n'''\n{task}\n'''"
 		apk_id = runTime.get_apk_id()
 		if apk_id != "" and runTime.get_agent_label() == 6:
 			# the 6th agent provides app name specifically in the inputs, so the app name is also added to the task
