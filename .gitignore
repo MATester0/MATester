@@ -130,3 +130,6 @@ output/
 
 # ----- model -----
 MLLM_Tester/openai/
+
+agents/*
+!agents
