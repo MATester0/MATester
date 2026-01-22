@@ -2,7 +2,7 @@ OUTPUTDIR=$1
 TASK=$2
 ROUND=$3
 TIME=$4"m"
-cd ../8-MobileGPT/Server
+cd ../agents/8-MobileGPT/Server
 source activate mobilegpt
 echo $OUTPUTDIR
 echo $TASK
