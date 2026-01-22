@@ -133,3 +133,5 @@ MLLM_Tester/openai/
 
 agents/*
 !agents
+# ----- config -----
+MLLM_Tester/config.ini
