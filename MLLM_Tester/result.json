@@ -1,0 +1,69 @@
+[
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "find a random music",
+    "symptom": 1,
+    "locations": [
+      "1.1.1",
+      "1.1.3",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "play a random music",
+    "symptom": 2,
+    "locations": [
+      "1.1.1",
+      "1.1.3",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "play a random music for me",
+    "symptom": 1,
+    "locations": [
+      "2.6"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "play a random music for me",
+    "symptom": 4,
+    "locations": [
+      "1.1.3"
+    ]
+  },
+  {
+    "agent id": 3,
+    "times": 0,
+    "task name": "search 'Clock' app and open it",
+    "symptom": 3,
+    "locations": [
+      "1.1.2",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 6,
+    "times": 0,
+    "task name": "search 'Clock' app and open it",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 7,
+    "times": 0,
+    "task name": "search 'Clock' app and open it",
+    "symptom": -1,
+    "locations": []
+  }
+]
