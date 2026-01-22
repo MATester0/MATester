@@ -125,9 +125,19 @@ def main():
 
 	if args.multiple:
 		# analyze multiple cases
-		run_info_2 = rn.run(args.agent_id, args.task_name, args.apk_name, running_time=1, analyzing_existing=True)
-		an.run(run_info_2, use_existing=True)
-		an.run_multiple(run_info, run_info_2, use_existing=True)
+		if args.task_name != None:
+			run_info_2 = rn.run(args.agent_id, args.task_name, args.apk_name, running_time=1, analyzing_existing=True)
+			an.run(run_info_2, use_existing=True)
+			an.run_multiple(run_info, run_info_2, use_existing=True)
+		else:
+			run_infos = [run_info]
+			for id in range(1, 10): # run 9 times
+				run_info_id = rn.run(args.agent_id, args.task_name, args.apk_name, running_time=id, analyzing_existing=True)
+				an.run(run_info_id, use_existing=True)
+				run_infos.append(run_info_id)
+			# check each pair of them
+			for id in range(10):
+				run_info = 
 
 if __name__ == "__main__":
 	logging.basicConfig(level=logging.INFO)

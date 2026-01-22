@@ -11,7 +11,11 @@ class Runner():
 		self.runtime = runTimeInfo()
 		self.git_bash_path = "D:\\Git\\bin\\bash.exe"
 
-	def run(self, agent_label: int, task_name: str, apk_id: str, running_times: int = 0, analyzing_existing = True):
+	def run(self, agent_label: int, task: str, apk_id: str, running_times: int = 0, analyzing_existing = True):
+		if task == None:
+			task_name = "run"
+		else:
+			task_name = task
 		if running_times == 0:
 			output_path = os.path.join(os.path.abspath(OUTPUT_DIR), str(agent_label), re.sub(r'[^a-zA-Z0-9]', '_', task_name))
 		else:
@@ -26,7 +30,7 @@ class Runner():
 			if not os.path.exists(self.output_path):
 				os.makedirs(self.output_path)
 			self.logger = LogManager.get_file_logger(os.path.join(self.output_path, "app.log"))
-			err_warning = self.__execute_shell(agent_label, task_name, apk_id)
+			err_warning = self.__execute_shell(agent_label, task, apk_id)
 			error_info = self.__remove_warning(err_warning)
 			self.runtime.record_error_output(error_info)
 			self.runtime.dump_info()
@@ -69,8 +73,9 @@ class Runner():
 		script_path = self.__search_for_script(agent_label)
 		self.logger.info("executing script in %s", script_path)
 
-		task_name = task_name.replace('"', "'")
-		self.logger.info("executing task %s", task_name)
+		if task_name != None:
+			task_name = task_name.replace('"', "'")
+			self.logger.info("executing task %s", task_name)
 
 		working_dir = os.path.abspath(".")
 		self.logger.debug("working directory %s", working_dir)
@@ -93,15 +98,26 @@ class Runner():
 					cwd= working_dir# working directory
 				)
 			else:
-				result = subprocess.run(
-					[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE), apk_id],
-					shell=True,		  # do not use shell for safety
-					check=True,           # if return 0 then throw execption
-					capture_output=True,  # catch outputs
-					text=True,            # return textual format
-					encoding='utf-8',
-					cwd= working_dir# working directory
-				)
+				if task_name != None:
+					result = subprocess.run(
+						[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE), apk_id],
+						shell=True,		  # do not use shell for safety
+						check=True,           # if return 0 then throw execption
+						capture_output=True,  # catch outputs
+						text=True,            # return textual format
+						encoding='utf-8',
+						cwd= working_dir# working directory
+					)
+				else:
+					result = subprocess.run(
+						[self.git_bash_path, script_path, self.output_path, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE), apk_id],
+						shell=True,		  # do not use shell for safety
+						check=True,           # if return 0 then throw execption
+						capture_output=True,  # catch outputs
+						text=True,            # return textual format
+						encoding='utf-8',
+						cwd= working_dir# working directory
+					)
 		except subprocess.CalledProcessError as e:
 			if e.returncode == 124:
 				self.logger.info("execution timeout!")

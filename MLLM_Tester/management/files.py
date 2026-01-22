@@ -111,12 +111,16 @@ class FileManagement():
 					if time_difference.total_seconds() >= HANG_MAX_TIME: # 1 minute and no response
 						f.write("timeout: hang")
 					else:
-						f.write("timeout: out of time")
+						# only if the task is not executed in time, will timeout happen
+						if self.runtime_info.task_name != None:
+							f.write("timeout: out of time")
+						else:
+							f.write("finish")
 		self.summary_file = SummaryFile(summary_file_path)
 
 	def get_error_type(self) -> ErrorType:
 		if self.summary_file == None:
-			self.__create_summary()
+			raise FileNotFoundError("summary.txt file is not found!")
 		label = self.summary_file.get_label()
 		if label == "finish":
 			return ErrorType.finish

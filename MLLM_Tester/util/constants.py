@@ -38,7 +38,7 @@ Your output should be in the following json format:
 
 PROMPT_QUALITY_PROMPT = '''Please check the quality of a prompt. The prompt is used to guide an agent to complete a task. A good prompt should satisfy the following three rules. Please do not be too strict with these rules.
 1. It is ok for prompts to contain phrases. However, if the prompt contains sentences, these sentences should be complete.
-2. It mentions the task.
+2. It mentions the task if the task is provided.
 3. It mentions available tools to complete the task.
 4. If the environment to conduct the task is provided, it should be mentioned in the prompt.
 
@@ -54,10 +54,7 @@ The prompt is:
 %s
 \'\'\'
 
-The task that this prompt should describe is:
-\'\'\'
-%s
-\'\'\'
+
 '''
 
 PLAN_QUALITY_PROMPT = '''Please check the quality of a plan. The plan is used to guide an agent to gradually complete a task. The plan is generated based on a prompt. A good plan should satisfy the following two rules. 

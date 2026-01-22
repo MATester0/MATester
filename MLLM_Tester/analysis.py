@@ -99,8 +99,11 @@ class Analysis():
 		else:
 			raise ValueError("the symtom id %s is not valid" % (label))
 
-		
-		result = {"agent id": self.runtime.get_agent_label(), "times": self.runtime.get_running_times(), "task name": self.runtime.get_task_name(), "symptom": label, "locations": locations}
+		task = self.runtime.get_task_name()
+		if task != None:
+			result = {"agent id": self.runtime.get_agent_label(), "times": self.runtime.get_running_times(), "task name": task, "symptom": label, "locations": locations}
+		else:
+			result = {"agent id": self.runtime.get_agent_label(), "times": self.runtime.get_running_times(), "symptom": label, "locations": locations}
 		
 		# append result to existing data
 		existing_result.append(result)
@@ -123,8 +126,13 @@ class Analysis():
 			# if file does not exist, return
 			return None, None
 		for result in existing_result:
-			if result["agent id"] == runtime_info.get_agent_label() and result["task name"] == runtime_info.get_task_name() and result["times"] == runtime_info.get_running_times():
-				return result["symptom"], result["locations"]
+			task_name = runtime_info.get_task_name()
+			if task_name != None:
+				if result["agent id"] == runtime_info.get_agent_label() and result["task name"] == task_name and result["times"] == runtime_info.get_running_times():
+					return result["symptom"], result["locations"]
+			else:
+				if result["agent id"] == runtime_info.get_agent_label() and result["times"] == runtime_info.get_running_times():
+					return result["symptom"], result["locations"]
 		return None, None
 
 	@LogManager.log_input_and_output()
@@ -357,7 +365,8 @@ class Analysis():
 					return locations
 			
 			# 2.3.3: plan cannot promote the task
-			if environment_file != None and not self.__check_plan_relation(environment_file, plan_file, self.runtime.get_task_name()):
+			task_name = self.runtime.get_task_name()
+			if environment_file != None and task_name != None and not self.__check_plan_relation(environment_file, plan_file, task_name):
 				locations.append("2.3.3")
 		return locations
 
@@ -367,7 +376,9 @@ class Analysis():
 		if not prompt_file.is_text():
 			raise TypeError("the prompt file should be text")
 		task = runTime.get_task_name()
-		prompt = PROMPT_QUALITY_PROMPT % (prompt_file.get_content(), task)
+		prompt = PROMPT_QUALITY_PROMPT % (prompt_file.get_content())
+		if task != None:
+			prompt += "The task that this prompt should describe is:\n'''\n{task}\n'''"
 		apk_id = runTime.get_apk_id()
 		if apk_id != "" and runTime.get_agent_label() == 6:
 			# the 6th agent provides app name specifically in the inputs, so the app name is also added to the task
@@ -656,15 +667,28 @@ class Analysis():
 		else:
 			firt, secd = runtime_info_2, runtime_info_1
 		
-		result = {
-			"agent id": firt.get_agent_label(), 
-			"run info": [
-				{"times": firt.get_running_times(), "task name": firt.get_task_name()}, 
-				{"times": secd.get_running_times(), "task name": secd.get_task_name()}
-			], 
-			"symptom": label, 
-			"locations": locations
-		}
+		task1 = firt.get_task_name()
+		task2 = secd.get_task_name()
+		if task1 == None or task2 == None:
+			result = {
+				"agent id": firt.get_agent_label(), 
+				"run info": [
+					{"times": firt.get_running_times()}, 
+					{"times": secd.get_running_times()}
+				], 
+				"symptom": label, 
+				"locations": locations
+			}
+		else:
+			result = {
+				"agent id": firt.get_agent_label(), 
+				"run info": [
+					{"times": firt.get_running_times(), "task name": task1}, 
+					{"times": secd.get_running_times(), "task name": task2}
+				], 
+				"symptom": label, 
+				"locations": locations
+			}
 		
 		# append result to existing data
 		existing_result.append(result)
@@ -699,8 +723,14 @@ class Analysis():
 			
 			run_infos = result["run info"]
 			
-			if result["agent id"] == label and run_infos[0]["task name"] == firt.get_task_name() and run_infos[0]["times"] == firt.get_running_times() and run_infos[1]["task name"] == secd.get_task_name() and run_infos[1]["times"] == secd.get_running_times():
-				return result["symptom"], result["locations"]
+			task1 = firt.get_task_name()
+			task2 = secd.get_task_name()
+			if task1 != None and task2 != None:
+				if result["agent id"] == label and run_infos[0]["task name"] == task1 and run_infos[0]["times"] == firt.get_running_times() and run_infos[1]["task name"] == task2 and run_infos[1]["times"] == secd.get_running_times():
+					return result["symptom"], result["locations"]
+			else:
+				if result["agent id"] == label and run_infos[0]["times"] == firt.get_running_times() and run_infos[1]["times"] == secd.get_running_times():
+					return result["symptom"], result["locations"]
 		
 		return None, None
 	
