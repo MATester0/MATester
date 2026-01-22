@@ -93,11 +93,7 @@ class Runner():
 				if task_name == None:
 					result = subprocess.run(
 						[self.git_bash_path, script_path, self.output_path, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE)],
-<<<<<<< HEAD
 						shell=False,		  # do not use shell for safety
-=======
-						shell=True,		  # do not use shell for safety
->>>>>>> e694e36 (fix: wrong cmd)
 						check=True,           # if return 0 then throw execption
 						capture_output=True,  # catch outputs
 						text=True,            # return textual format
@@ -108,11 +104,7 @@ class Runner():
 				else:
 					result = subprocess.run(
 						[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE)],
-<<<<<<< HEAD
 						shell=False,
-=======
-						shell=True,
->>>>>>> e694e36 (fix: wrong cmd)
 						check=True,           # if return 0 then throw execption
 						capture_output=True,  # catch outputs
 						text=True,            # return textual format
