@@ -130,7 +130,11 @@ class Runner():
 				self.logger.error("running error:\n%s", e.stderr)
 				return e.stderr
 			else:
-				raise e
+				self.logger.info("execution wrong!")
+				self.runtime.record_end_time()
+				self.logger.info("running info:\n%s", e.stdout)
+				self.logger.error("running error:\n%s", e.stderr)
+				return e.stderr
 		
 		self.runtime.record_end_time()
 		self.logger.info("running info:\n%s", result.stdout)
