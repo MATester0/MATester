@@ -80,9 +80,9 @@ def arg_parse():
 	# additional checks
 	if args.apk_name:
 	    # existence of apk file
-		apk_path = os.path.join(os.path.abspath("../dataset"), "apks", "{args.apk_name}.apk")
+		apk_path = os.path.join(os.path.abspath("../dataset"), "apks", f"{args.apk_name}.apk")
 		if not os.path.exists(apk_path):
-			raise FileNotFoundError("file {args.apk_name}.apk is not available")
+			raise FileNotFoundError(f"file {args.apk_name}.apk is not available")
 
 	if not check_args_logics(args):
 		raise argparse.ArgumentError("the args are not compatible.")
