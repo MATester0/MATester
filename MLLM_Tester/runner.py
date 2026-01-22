@@ -96,6 +96,7 @@ class Runner():
 						capture_output=True,  # catch outputs
 						text=True,            # return textual format
 						encoding='utf-8',
+						errors='replace',
 						cwd= working_dir# working directory
 					)
 				else:
@@ -106,6 +107,7 @@ class Runner():
 						capture_output=True,  # catch outputs
 						text=True,            # return textual format
 						encoding='utf-8',
+						errors='replace',
 						cwd= working_dir# working directory
 					)
 			else:
@@ -117,6 +119,7 @@ class Runner():
 					capture_output=True,  # catch outputs
 					text=True,            # return textual format
 					encoding='utf-8',
+					errors='replace',
 					cwd= working_dir# working directory
 				)	
 		except subprocess.CalledProcessError as e:
