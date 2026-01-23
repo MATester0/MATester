@@ -13,7 +13,10 @@ class runTimeInfo:
 			return NotImplemented  # cannot compare
 		self.get_running_times()
 		other.get_running_times()
-		return self.task_name < other.task_name or self.task_name == other.task_name and self.times < other.times
+		if self.task_name != None and other.task_name != None:
+			return self.task_name < other.task_name or self.task_name == other.task_name and self.times < other.times
+		else:
+			return self.times < other.times
 
 	def record_agent_label(self, agent_label):
 		self.agent_label = agent_label
