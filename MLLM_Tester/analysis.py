@@ -555,11 +555,12 @@ class Analysis():
 		reflect_file = self.files.get_file_by_round_int_and_name(max_round, "reflect")
 		assert(plan_file != None)
 
-		if action_file != None:
-			if action_file == None and reflect_file == None:
-				locations.append("3.4")
-				return locations
+		
+		if action_file == None and reflect_file == None:
+			locations.append("3.4")
+			return locations
 
+		if action_file != None:
 			if not isinstance(plan_file, PlanFile) or not isinstance(action_file, ActionFile):
 				raise TypeError("the plan file %s or action file are not of the correct type" % (plan_file.get_file_path(), action_file.get_file_path()))
 			
