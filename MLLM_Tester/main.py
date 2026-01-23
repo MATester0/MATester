@@ -136,9 +136,9 @@ def main():
 				an.run(run_info_id, use_existing=True)
 				run_infos.append(run_info_id)
 			# check each pair of them
-			for id in range(10):
+			for id in range(9):
 				run_info = run_infos[id]
-				for id2 in range(id+1, 11):
+				for id2 in range(id+1, 10):
 					run_info_2 = run_infos[id2]
 					an.run_multiple(run_info, run_info_2, use_existing=True)
 
