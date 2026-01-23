@@ -641,6 +641,8 @@ class Analysis():
 			locations = self.__get_location_multiple(files1, files2, runtime_info_1, runtime_info_2)
 		else:
 			locations = []
+		if len(locations) == 0:
+			symptom_label = -1
 		self.__record_multiple(runtime_info_1, runtime_info_2, symptom_label, locations)
 		
 		return symptom_label, locations
