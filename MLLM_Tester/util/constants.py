@@ -11,7 +11,7 @@ LOOSE_POSSIBILITY_LEVEL = 0.9
 MAX_LLM_QUERY_TIMES = 3 # llm is queried successfully for MAX_LLM_QUERY_TIMES times, to calculate the average similarity
 MAX_LLM_RETRY_TIMES = 10 # llm is queried at least MAX_LLM_RETRY_TIMES times, including failures
 
-ENV_SNAP_COMP_PROMPT = '''Please help me identify if the user's summary of the interactive elements in the appended picture is complete. The picture is a snapshot of the current environment. Some elements in the environment are interactive, so that users can touch, click, input texts or call specific APIs to interact with the envirnonment. The user wrote a text to summarize the interactive elements in the picture. To be a complete summary, it should include all interactive elements. If the picture shows an app screenshot, please ignore the elements outside the launched activity.
+ENV_SNAP_COMP_PROMPT = '''Please help me identify if the user's summary of the interactive elements and in the appended picture is complete. The picture is a snapshot of the current environment. Some elements in the environment are interactive, so that users can call specific APIs to interact with the envirnonment. If the picture shows an app screenshot, interactive elements are widgets inside the launched activity. If the picture shows a highway, the interactive elements are all the vehicles and lanes.
 
 Your output should be in the following json format:
         
