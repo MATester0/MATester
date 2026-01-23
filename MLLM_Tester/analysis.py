@@ -6,6 +6,7 @@ from typing import List
 from util.llm import LLM
 from util.clip import Clip
 from util.tool import Tools
+from util.encoder import TextEmbedder
 from util.log import LogManager
 from util.constants import HARD_POSSIBILITY_LEVEL, LOOSE_POSSIBILITY_LEVEL, ENV_SNAP_COMP_PROMPT, SNAP_LABEL_PROMPT, PROMPT_QUALITY_PROMPT, PLAN_QUALITY_PROMPT, PLAN_SNAP_FIG_SATIS_PROMPT, PLAN_SNAP_TXT_SATIS_PROMPT, TASK_COMPLT_PROMPT, PLAN_ENV_RELAT_PROMPT, PLAN_ACT_COMP_PROMPT, MAX_LLM_QUERY_TIMES, MAX_LLM_RETRY_TIMES
 
@@ -27,6 +28,7 @@ class Analysis():
 		self.check_loose = check_loose
 		self.files = FileManagement()
 		self.clip_embedder = Clip()
+		self.text_embedder = TextEmbedder()
 		self.llm = LLM()
 		self.logger = LogManager.get_logger()
 		self.symptom_dict = {
@@ -794,7 +796,10 @@ class Analysis():
 		assert(snapshot_file != None) # snapshot file cannot be None, otherwise problem is 1.4
 
 		environment_file_embedding = self.clip_embedder.get_embedding(environment_file)
-		snapshot_file_embedding = self.clip_embedder.get_embedding(snapshot_file)
+		if snapshot_file.is_image():
+			snapshot_file_embedding = self.clip_embedder.get_embedding(snapshot_file)
+		else:
+			snapshot_file_embedding = self.text_embedder.get_embedding(snapshot_file)
 
 		for r in range(rit_file.get_max_round() + 1):
 			comp_env_file = rit_file.get_file_by_round_int_and_name(r, "environment")
@@ -803,8 +808,12 @@ class Analysis():
 				sim = self.clip_embedder.get_similarity(environment_file_embedding, comp_env_file_embedding)
 				if sim >= LOOSE_POSSIBILITY_LEVEL: # find two similar environment files:
 					comp_snp_file = rit_file.get_file_by_round_int_and_name(r, "snapshot")
-					comp_snp_file_embedding = self.clip_embedder.get_embedding(comp_snp_file)
-					sim_snp = self.clip_embedder.get_similarity(snapshot_file_embedding, comp_snp_file_embedding)
+					if comp_snp_file.is_image():
+						comp_snp_file_embedding = self.clip_embedder.get_embedding(comp_snp_file)
+						sim_snp = self.clip_embedder.get_similarity(snapshot_file_embedding, comp_snp_file_embedding)
+					else:
+						comp_snp_file_embedding = self.text_embedder.get_embedding(comp_snp_file)
+						sim_snp = self.text_embedder.get_similarity(snapshot_file_embedding, comp_snp_file_embedding)
 					if sim_snp < HARD_POSSIBILITY_LEVEL:
 						# their snapshots are different!
 						# 1.2.1: snapshots and environments have the same modality, but different content
@@ -851,8 +860,11 @@ class Analysis():
 		assert(snapshot_file != None) # snapshot file cannot be None, otherwise there should be no problem
 
 		# prompt_file_embedding = self.clip_embedder.get_embedding(prompt_file)
-		plan_file_embedding = self.clip_embedder.get_embedding(plan_file)
-		snapshot_file_embedding = self.clip_embedder.get_embedding(snapshot_file)
+		plan_file_embedding = self.text_embedder.get_embedding(plan_file)
+		if snapshot_file.is_image():
+			snapshot_file_embedding = self.clip_embedder.get_embedding(snapshot_file)
+		else:
+			snapshot_file_embedding = self.text_embedder.get_embedding(snapshot_file)
 
 
 		#  maybe prompt similarity is not necessary? they all use templates
@@ -866,15 +878,19 @@ class Analysis():
 				# comp_prmp_file_embedding = self.clip_embedder.get_embedding(comp_prmp_file)
 				# sim_prmp = self.clip_embedder.get_similarity(prompt_file_embedding, comp_prmp_file_embedding)
 				
-				comp_snp_file_embedding = self.clip_embedder.get_embedding(comp_snp_file)
-				sim_snp = self.clip_embedder.get_similarity(snapshot_file_embedding, comp_snp_file_embedding)
+				if comp_snp_file.is_image():
+					comp_snp_file_embedding = self.clip_embedder.get_embedding(comp_snp_file)
+					sim_snp = self.clip_embedder.get_similarity(snapshot_file_embedding, comp_snp_file_embedding)
+				else:
+					comp_snp_file_embedding = self.text_embedder.get_embedding(comp_snp_file)
+					sim_snp = self.text_embedder.get_similarity(snapshot_file_embedding, comp_snp_file_embedding)
 				
 				# if sim_prmp >= LOOSE_POSSIBILITY_LEVEL and sim_snp >= LOOSE_POSSIBILITY_LEVEL: # find two similar prompts and snapshots:
 				if sim_snp >= LOOSE_POSSIBILITY_LEVEL: # find two similar snapshots -> means similar prompts:
 					
 					comp_plan_file = rit_file.get_file_by_round_int_and_name(r, "plan")
-					comp_plan_file_embedding = self.clip_embedder.get_embedding(comp_plan_file)
-					sim_plan = self.clip_embedder.get_similarity(plan_file_embedding, comp_plan_file_embedding)
+					comp_plan_file_embedding = self.text_embedder.get_embedding(comp_plan_file)
+					sim_plan = self.text_embedder.get_similarity(plan_file_embedding, comp_plan_file_embedding)
 					
 					if sim_plan < HARD_POSSIBILITY_LEVEL:
 						# their plans are different!
