@@ -65,5 +65,88 @@
     "task name": "search 'Clock' app and open it",
     "symptom": -1,
     "locations": []
+  },
+  {
+    "agent id": 18,
+    "times": 0,
+    "symptom": 1,
+    "locations": [
+      "1.1.2"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 1,
+    "symptom": 1,
+    "locations": [
+      "1.1.2"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 2,
+    "symptom": 1,
+    "locations": [
+      "1.1.2",
+      "3.2.1"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 3,
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 18,
+    "times": 4,
+    "symptom": 1,
+    "locations": [
+      "1.1.2"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 5,
+    "symptom": 1,
+    "locations": [
+      "1.1.2",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 6,
+    "symptom": 1,
+    "locations": [
+      "1.1.2",
+      "3.2.1"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 7,
+    "symptom": 1,
+    "locations": [
+      "1.1.2",
+      "3.2.1"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 8,
+    "symptom": 1,
+    "locations": [
+      "1.1.2"
+    ]
+  },
+  {
+    "agent id": 18,
+    "times": 9,
+    "symptom": 1,
+    "locations": [
+      "1.1.2",
+      "3.1"
+    ]
   }
 ]
