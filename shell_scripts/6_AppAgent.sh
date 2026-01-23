@@ -16,7 +16,7 @@ if [ ! -f "$OUTPUTDIR" ]; then
 fi
 
 adb install ../../dataset/apks/$APKNAME
-# adb shell monkey -p $APKID -c android.intent.category.LAUNCHER 1
+adb shell monkey -p $APKID -c android.intent.category.LAUNCHER 1
 echo timeout $TIME python learn.py --app $APKID -output \"$OUTPUTDIR\" -task \"$TASK\" -round $ROUND
 timeout $TIME python learn.py --app $APKID -output "$OUTPUTDIR" -task "$TASK" -round $ROUND
 # adb uninstall $APKID
