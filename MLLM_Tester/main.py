@@ -39,10 +39,13 @@ def arg_parse():
 	epilog=textwrap.dedent('''
 	example:
 	# base usage: identify agent id and task name
-	python script.py -i 2 -t "play a random music"
+	python main.py -i 2 -t "play a random music"
 
 	# specific usage: require installation of APKs
-	python script.py -i 3/6/7 -t "search for the 'clock' app and open it" -a "com.simplemobiletools.applauncher"
+	python main.py -i 3/6/7 -t "search for the 'clock' app and open it" -a "com.simplemobiletools.applauncher"
+						
+	# scenario-based agent: no task name
+	python main.py -i 18
 	''')
 	)
 
