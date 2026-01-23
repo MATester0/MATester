@@ -12,6 +12,7 @@ class Runner():
 		self.git_bash_path = "D:\\Git\\bin\\bash.exe"
 
 	def run(self, agent_label: int, task: str, apk_id: str, running_times: int = 0, analyzing_existing = True):
+		self.runtime = runTimeInfo()
 		if task == None:
 			task_name = "run"
 		else:
@@ -34,7 +35,8 @@ class Runner():
 			error_info = self.__remove_warning(err_warning)
 			self.runtime.record_error_output(error_info)
 			self.runtime.dump_info()
-		return self.runtime
+		runtime = self.runtime
+		return runtime
 
 	@staticmethod
 	def __get_empty_path(output_path):
