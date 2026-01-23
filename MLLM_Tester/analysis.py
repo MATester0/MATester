@@ -659,9 +659,10 @@ class Analysis():
 			existing_result = []
 		
 		# prepare results
-		if label not in self.symptom_dict:
+		if label not in self.symptom_dict and label != -1:
 			raise ValueError("the symtom id %s is not valid" % (label))
-		symptom_str = self.symptom_dict[label]
+		if label != -1:
+			symptom_str = self.symptom_dict[label]
 
 
 		if runtime_info_1 < runtime_info_2:
