@@ -552,43 +552,46 @@ class Analysis():
 		max_round = self.files.get_max_round()
 		plan_file = self.files.get_file_by_round_int_and_name(max_round, "plan")
 		action_file = self.files.get_file_by_round_int_and_name(max_round, "action")
+		reflect_file = self.files.get_file_by_round_int_and_name(max_round, "reflect")
 		assert(plan_file != None)
 
-		if action_file == None:
-			locations.append("3.4")
-			return locations
+		if action_file != None:
+			if action_file == None and reflect_file == None:
+				locations.append("3.4")
+				return locations
 
-		if not isinstance(plan_file, PlanFile) or not isinstance(action_file, ActionFile):
-			raise TypeError("the plan file %s or action file are not of the correct type" % (plan_file.get_file_path(), action_file.get_file_path()))
-		
-		if action_file.get_content().replace("\n", "").strip() == "":
-			locations.append("3.4")
-			return locations
-		
-		# 3.1: action is different from the plan
-		if not self.__check_action_relation(plan_file, action_file):
-			locations.append("3.1")
-			return locations
+			if not isinstance(plan_file, PlanFile) or not isinstance(action_file, ActionFile):
+				raise TypeError("the plan file %s or action file are not of the correct type" % (plan_file.get_file_path(), action_file.get_file_path()))
+			
+			if action_file.get_content().replace("\n", "").strip() == "":
+				locations.append("3.4")
+				return locations
+			
+			# 3.1: action is different from the plan
+			if not self.__check_action_relation(plan_file, action_file):
+				locations.append("3.1")
+				return locations
 		
 		# 3.3: reflection of the action's execution results is wrong
-		reflect_file = self.files.get_file_by_round_int_and_name(max_round, "reflect")
+		# reflect_file = self.files.get_file_by_round_int_and_name(max_round, "reflect")
 		if reflect_file != None:
 			if not isinstance(reflect_file, ReflectFile):
 				raise TypeError("the reflect file %s is not of the correct type" % (reflect_file.get_file_path()))
 			if reflect_file.get_content().replace("\n", "").strip() == "":
 				locations.append("3.3")
 
-		# 3.2: action is not applicable to the environment
-		if len(self.locations) != 0:
-			# 3.2.1: plan is wrong but the corresponding action is directly generated without extra checking
-			locations.append("3.2.1")
-			return locations
-		
-		# remove all other reasons, the only reason is that the API is wrong
-		if self.error_type in [ErrorType.ERROR, ErrorType.error, ErrorType.hang]:
-			# 3.2.2: API called by the action is implemented wrong
-			locations.append("3.2.2")
-			return locations
+		if action_file != None:
+			# 3.2: action is not applicable to the environment
+			if len(self.locations) != 0:
+				# 3.2.1: plan is wrong but the corresponding action is directly generated without extra checking
+				locations.append("3.2.1")
+				return locations
+			
+			# remove all other reasons, the only reason is that the API is wrong
+			if self.error_type in [ErrorType.ERROR, ErrorType.error, ErrorType.hang]:
+				# 3.2.2: API called by the action is implemented wrong
+				locations.append("3.2.2")
+				return locations
 		return locations
 	
 	@LogManager.log_input_and_output()
