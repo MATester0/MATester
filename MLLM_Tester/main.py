@@ -71,7 +71,7 @@ def arg_parse():
 	)
 	parser.add_argument(
         '-m', '--multiple',
-        action='store_false',
+        action='store_true',
         help='test multiple times'
     )
 
