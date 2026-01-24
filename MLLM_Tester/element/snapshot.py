@@ -8,7 +8,7 @@ class SnapshotFile(NormalFile):
 		if 'content' in self.__dict__:
 			return self.content
 		if self.is_text():
-			self.content = open(self.file_path).read()
+			self.content = open(self.file_path, encoding="utf-8").read()
 		elif self.is_image():
 			self.content = Image.open(self.file_path) 
 			self.content.verify()  # verify the completeness of the file
