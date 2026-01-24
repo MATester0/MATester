@@ -34,8 +34,8 @@ class Analysis():
 		self.symptom_dict = {
 			1: "report error and crash",
 			2: "hang",
-			3: "incorrect behavior (but do not crash)",
-			4: "stop without completing the task",
+			3: "stop without completing the task",
+			4: "incorrect behavior (but do not crash)",
 			5: "inconsistent behavior under the same setting",
 			6: "unfriendly user interface"
 		}
