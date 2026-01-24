@@ -809,11 +809,11 @@ class Analysis():
 
 		for r in range(rit_file.get_max_round() + 1):
 			comp_env_file = rit_file.get_file_by_round_int_and_name(r, "environment")
-			if comp_env_file != None:
+			comp_snp_file = rit_file.get_file_by_round_int_and_name(r, "snapshot")
+			if comp_env_file != None and comp_snp_file != None:
 				comp_env_file_embedding = self.clip_embedder.get_embedding(comp_env_file)
 				sim = self.clip_embedder.get_similarity(environment_file_embedding, comp_env_file_embedding)
 				if sim >= LOOSE_POSSIBILITY_LEVEL: # find two similar environment files:
-					comp_snp_file = rit_file.get_file_by_round_int_and_name(r, "snapshot")
 					if comp_snp_file.is_image():
 						comp_snp_file_embedding = self.clip_embedder.get_embedding(comp_snp_file)
 						sim_snp = self.clip_embedder.get_similarity(snapshot_file_embedding, comp_snp_file_embedding)
@@ -877,9 +877,10 @@ class Analysis():
 		for r in range(rit_file.get_max_round() + 1):
 			# comp_prmp_file = rit_file.get_file_by_round_int_and_name(r, "prompt")
 			comp_snp_file = rit_file.get_file_by_round_int_and_name(r, "snapshot")
+			comp_plan_file = rit_file.get_file_by_round_int_and_name(r, "plan")
 			
 			# if comp_prmp_file != None and comp_snp_file != None:
-			if comp_snp_file != None:
+			if comp_snp_file != None and comp_plan_file != None:
 				
 				# comp_prmp_file_embedding = self.clip_embedder.get_embedding(comp_prmp_file)
 				# sim_prmp = self.clip_embedder.get_similarity(prompt_file_embedding, comp_prmp_file_embedding)
@@ -894,7 +895,6 @@ class Analysis():
 				# if sim_prmp >= LOOSE_POSSIBILITY_LEVEL and sim_snp >= LOOSE_POSSIBILITY_LEVEL: # find two similar prompts and snapshots:
 				if sim_snp >= LOOSE_POSSIBILITY_LEVEL: # find two similar snapshots -> means similar prompts:
 					
-					comp_plan_file = rit_file.get_file_by_round_int_and_name(r, "plan")
 					comp_plan_file_embedding = self.text_embedder.get_embedding(comp_plan_file)
 					sim_plan = self.text_embedder.get_similarity(plan_file_embedding, comp_plan_file_embedding)
 					
