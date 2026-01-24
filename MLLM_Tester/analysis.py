@@ -176,6 +176,10 @@ class Analysis():
 			if snapshot_file == None and last_snapshot_file != None:
 				locations.append("1.4")
 				return locations
+		else:
+			if snapshot_file == None:
+				locations.append("1.4")
+				return locations
 		
 		if not isinstance(snapshot_file, SnapshotFile):
 			raise TypeError("the snapshot file %s is not of the correct type" % (snapshot_file.get_file_path()))
