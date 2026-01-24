@@ -6672,5 +6672,1614 @@
     ],
     "symptom": -1,
     "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open DCIM folder in gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Open DCIM folder in gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort folders in gallery by name in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort folders in gallery by name in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Show all contents in all folders within the gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Show all contents in all folders within the gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Search for the DCIM folder in gallery app and open it"
+      },
+      {
+        "times": 1,
+        "task name": "Search for the DCIM folder in gallery app and open it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Do not display GIF images in the Gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Do not display GIF images in the Gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open DCIM folder in gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Open DCIM folder in gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort folders in gallery by name in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort folders in gallery by name in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Show all contents in all folders within the gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Show all contents in all folders within the gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Search for the DCIM folder in gallery app and open it"
+      },
+      {
+        "times": 1,
+        "task name": "Search for the DCIM folder in gallery app and open it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Do not display GIF images in the Gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Do not display GIF images in the Gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a text note named 'NewTextNote'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a text note named 'NewTextNote'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Do not display GIF images in the Gallery app"
+      },
+      {
+        "times": 2,
+        "task name": "Do not display GIF images in the Gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a checklist note called 'NewCheckList'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a checklist note called 'NewCheckList'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Delete the note 'Diary'"
+      },
+      {
+        "times": 1,
+        "task name": "Delete the note 'Diary'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a new note called 'test' and type '123456'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a new note called 'test' and type '123456'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Do not display GIF images in the Gallery app"
+      },
+      {
+        "times": 3,
+        "task name": "Do not display GIF images in the Gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Rename the note 'diary' to 'events'"
+      },
+      {
+        "times": 1,
+        "task name": "Rename the note 'diary' to 'events'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a new event, the task is 'laundry', save it"
+      },
+      {
+        "times": 1,
+        "task name": "Create a new event, the task is 'laundry', save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Delete all the events in the Calendar app"
+      },
+      {
+        "times": 1,
+        "task name": "Delete all the events in the Calendar app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the view from monthly to yearly"
+      },
+      {
+        "times": 1,
+        "task name": "Change the view from monthly to yearly"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Add the holidays of China to the calendar"
+      },
+      {
+        "times": 1,
+        "task name": "Add the holidays of China to the calendar"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Add the holidays of South Africa to the calendar and list all the events in 2023"
+      },
+      {
+        "times": 2023,
+        "task name": "Add the holidays of South Africa to the calendar and list all the events in 2023"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the theme of the Music player app to light and save it"
+      },
+      {
+        "times": 1,
+        "task name": "Change the theme of the Music player app to light and save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the sleep timer for five minutes"
+      },
+      {
+        "times": 1,
+        "task name": "Set the sleep timer for five minutes"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Check the 'Recordings' in the Folders"
+      },
+      {
+        "times": 1,
+        "task name": "Check the 'Recordings' in the Folders"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort by year in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort by year in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Play 'test1' in recordings and set the loop mode to 'loop the current song'"
+      },
+      {
+        "times": 1,
+        "task name": "Play 'test1' in recordings and set the loop mode to 'loop the current song'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "search 'Clock' app and open it"
+      },
+      {
+        "times": 1,
+        "task name": "search 'Clock' app and open it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort apps by title in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort apps by title in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Change column count to 3"
+      },
+      {
+        "times": 3,
+        "task name": "Change column count to 3"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change theme color to light"
+      },
+      {
+        "times": 1,
+        "task name": "Change theme color to light"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Disable closing this app when launching a different one"
+      },
+      {
+        "times": 1,
+        "task name": "Disable closing this app when launching a different one"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Hide the recording notification"
+      },
+      {
+        "times": 1,
+        "task name": "Hide the recording notification"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the theme color to white and save it"
+      },
+      {
+        "times": 1,
+        "task name": "Change the theme color to white and save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open 'frequently asked questions'"
+      },
+      {
+        "times": 1,
+        "task name": "Open 'frequently asked questions'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set extension to mp3"
+      },
+      {
+        "times": 1,
+        "task name": "Set extension to mp3"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set bitrate to 96 kbps"
+      },
+      {
+        "times": 1,
+        "task name": "Set bitrate to 96 kbps"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change alarm max reminder duration to 1 minute in settings"
+      },
+      {
+        "times": 1,
+        "task name": "Change alarm max reminder duration to 1 minute in settings"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open the clock page"
+      },
+      {
+        "times": 1,
+        "task name": "Open the clock page"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Turn on the '7:00 am' alarm clock vibration function"
+      },
+      {
+        "times": 1,
+        "task name": "Turn on the '7:00 am' alarm clock vibration function"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the sorting order for alarms by 'Day and Alarm time'"
+      },
+      {
+        "times": 1,
+        "task name": "Set the sorting order for alarms by 'Day and Alarm time'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 6,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the snooze time to 5 minute"
+      },
+      {
+        "times": 1,
+        "task name": "Set the snooze time to 5 minute"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a text note named 'NewTextNote'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a text note named 'NewTextNote'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a checklist note called 'NewCheckList'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a checklist note called 'NewCheckList'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Delete the note 'Diary'"
+      },
+      {
+        "times": 1,
+        "task name": "Delete the note 'Diary'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a new note called 'test' and type '123456'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a new note called 'test' and type '123456'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Rename the note 'diary' to 'events'"
+      },
+      {
+        "times": 1,
+        "task name": "Rename the note 'diary' to 'events'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a new event, the task is 'laundry', save it"
+      },
+      {
+        "times": 1,
+        "task name": "Create a new event, the task is 'laundry', save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Delete all the events in the Calendar app"
+      },
+      {
+        "times": 1,
+        "task name": "Delete all the events in the Calendar app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the view from monthly to yearly"
+      },
+      {
+        "times": 1,
+        "task name": "Change the view from monthly to yearly"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Add the holidays of China to the calendar"
+      },
+      {
+        "times": 1,
+        "task name": "Add the holidays of China to the calendar"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Add the holidays of South Africa to the calendar and list all the events in 2023"
+      },
+      {
+        "times": 2023,
+        "task name": "Add the holidays of South Africa to the calendar and list all the events in 2023"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the theme of the Music player app to light and save it"
+      },
+      {
+        "times": 1,
+        "task name": "Change the theme of the Music player app to light and save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the sleep timer for five minutes"
+      },
+      {
+        "times": 1,
+        "task name": "Set the sleep timer for five minutes"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open DCIM folder in gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Open DCIM folder in gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort folders in gallery by name in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort folders in gallery by name in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Show all contents in all folders within the gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Show all contents in all folders within the gallery app"
+      }
+    ],
+    "symptom": 5,
+    "locations": [
+      "2.5.1"
+    ]
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Search for the DCIM folder in gallery app and open it"
+      },
+      {
+        "times": 1,
+        "task name": "Search for the DCIM folder in gallery app and open it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Do not display GIF images in the Gallery app"
+      },
+      {
+        "times": 1,
+        "task name": "Do not display GIF images in the Gallery app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a text note named 'NewTextNote'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a text note named 'NewTextNote'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a checklist note called 'NewCheckList'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a checklist note called 'NewCheckList'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Delete the note 'Diary'"
+      },
+      {
+        "times": 1,
+        "task name": "Delete the note 'Diary'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a new note called 'test' and type '123456'"
+      },
+      {
+        "times": 1,
+        "task name": "Create a new note called 'test' and type '123456'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Rename the note 'diary' to 'events'"
+      },
+      {
+        "times": 1,
+        "task name": "Rename the note 'diary' to 'events'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Create a new event, the task is 'laundry', save it"
+      },
+      {
+        "times": 1,
+        "task name": "Create a new event, the task is 'laundry', save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Delete all the events in the Calendar app"
+      },
+      {
+        "times": 1,
+        "task name": "Delete all the events in the Calendar app"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the view from monthly to yearly"
+      },
+      {
+        "times": 1,
+        "task name": "Change the view from monthly to yearly"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Add the holidays of China to the calendar"
+      },
+      {
+        "times": 1,
+        "task name": "Add the holidays of China to the calendar"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Add the holidays of South Africa to the calendar and list all the events in 2023"
+      },
+      {
+        "times": 2023,
+        "task name": "Add the holidays of South Africa to the calendar and list all the events in 2023"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the theme of the Music player app to light and save it"
+      },
+      {
+        "times": 1,
+        "task name": "Change the theme of the Music player app to light and save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the sleep timer for five minutes"
+      },
+      {
+        "times": 1,
+        "task name": "Set the sleep timer for five minutes"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Check the 'Recordings' in the Folders"
+      },
+      {
+        "times": 1,
+        "task name": "Check the 'Recordings' in the Folders"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort by year in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort by year in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Play 'test1' in recordings and set the loop mode to 'loop the current song'"
+      },
+      {
+        "times": 1,
+        "task name": "Play 'test1' in recordings and set the loop mode to 'loop the current song'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "search 'Clock' app and open it"
+      },
+      {
+        "times": 1,
+        "task name": "search 'Clock' app and open it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort apps by title in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort apps by title in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Change column count to 3"
+      },
+      {
+        "times": 3,
+        "task name": "Change column count to 3"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change theme color to light"
+      },
+      {
+        "times": 1,
+        "task name": "Change theme color to light"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Disable closing this app when launching a different one"
+      },
+      {
+        "times": 1,
+        "task name": "Disable closing this app when launching a different one"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Hide the recording notification"
+      },
+      {
+        "times": 1,
+        "task name": "Hide the recording notification"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the theme color to white and save it"
+      },
+      {
+        "times": 1,
+        "task name": "Change the theme color to white and save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open 'frequently asked questions'"
+      },
+      {
+        "times": 1,
+        "task name": "Open 'frequently asked questions'"
+      }
+    ],
+    "symptom": 5,
+    "locations": [
+      "2.5.1"
+    ]
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set extension to mp3"
+      },
+      {
+        "times": 1,
+        "task name": "Set extension to mp3"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set bitrate to 96 kbps"
+      },
+      {
+        "times": 1,
+        "task name": "Set bitrate to 96 kbps"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change alarm max reminder duration to 1 minute in settings"
+      },
+      {
+        "times": 1,
+        "task name": "Change alarm max reminder duration to 1 minute in settings"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open the clock page"
+      },
+      {
+        "times": 1,
+        "task name": "Open the clock page"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Turn on the '7:00 am' alarm clock vibration function"
+      },
+      {
+        "times": 1,
+        "task name": "Turn on the '7:00 am' alarm clock vibration function"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the sorting order for alarms by 'Day and Alarm time'"
+      },
+      {
+        "times": 1,
+        "task name": "Set the sorting order for alarms by 'Day and Alarm time'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 7,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the snooze time to 5 minute"
+      },
+      {
+        "times": 1,
+        "task name": "Set the snooze time to 5 minute"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Check the 'Recordings' in the Folders"
+      },
+      {
+        "times": 1,
+        "task name": "Check the 'Recordings' in the Folders"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort by year in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort by year in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Play 'test1' in recordings and set the loop mode to 'loop the current song'"
+      },
+      {
+        "times": 1,
+        "task name": "Play 'test1' in recordings and set the loop mode to 'loop the current song'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "search 'Clock' app and open it"
+      },
+      {
+        "times": 1,
+        "task name": "search 'Clock' app and open it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Sort apps by title in descending order"
+      },
+      {
+        "times": 1,
+        "task name": "Sort apps by title in descending order"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 1,
+        "task name": "Change column count to 3"
+      },
+      {
+        "times": 3,
+        "task name": "Change column count to 3"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change theme color to light"
+      },
+      {
+        "times": 1,
+        "task name": "Change theme color to light"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Disable closing this app when launching a different one"
+      },
+      {
+        "times": 1,
+        "task name": "Disable closing this app when launching a different one"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Hide the recording notification"
+      },
+      {
+        "times": 1,
+        "task name": "Hide the recording notification"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change the theme color to white and save it"
+      },
+      {
+        "times": 1,
+        "task name": "Change the theme color to white and save it"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open 'frequently asked questions'"
+      },
+      {
+        "times": 1,
+        "task name": "Open 'frequently asked questions'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set extension to mp3"
+      },
+      {
+        "times": 1,
+        "task name": "Set extension to mp3"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set bitrate to 96 kbps"
+      },
+      {
+        "times": 1,
+        "task name": "Set bitrate to 96 kbps"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Change alarm max reminder duration to 1 minute in settings"
+      },
+      {
+        "times": 1,
+        "task name": "Change alarm max reminder duration to 1 minute in settings"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Open the clock page"
+      },
+      {
+        "times": 1,
+        "task name": "Open the clock page"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Turn on the '7:00 am' alarm clock vibration function"
+      },
+      {
+        "times": 1,
+        "task name": "Turn on the '7:00 am' alarm clock vibration function"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the sorting order for alarms by 'Day and Alarm time'"
+      },
+      {
+        "times": 1,
+        "task name": "Set the sorting order for alarms by 'Day and Alarm time'"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 3,
+    "run info": [
+      {
+        "times": 0,
+        "task name": "Set the snooze time to 5 minute"
+      },
+      {
+        "times": 1,
+        "task name": "Set the snooze time to 5 minute"
+      }
+    ],
+    "symptom": -1,
+    "locations": []
   }
 ]
