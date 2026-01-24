@@ -75,9 +75,10 @@ class Analysis():
 			if self.runtime.get_task_name() != None:
 				max_round = self.files.get_max_round()
 				environment_file = self.files.get_file_by_round_int_and_name(max_round, "environment")
-				if environment_file == None:
-					raise FileNotFoundError("the environment file does not exist: environment_%s.png" % (max_round))
-				if not self.__check_task_completion(environment_file, self.runtime, problematic_value = False):
+				if environment_file == None and max_round >= 1:
+					# raise FileNotFoundError("the environment file does not exist: environment_%s.png" % (max_round))
+					environment_file = self.files.get_file_by_round_int_and_name(max_round - 1, "environment")
+				if environment_file != None and not self.__check_task_completion(environment_file, self.runtime, problematic_value = False):
 					symptom = 3
 		else:
 			raise ValueError("the value type of " + error_type + " cannot be recognized")
