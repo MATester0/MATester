@@ -160,11 +160,15 @@ class FileManagement():
 
 	def get_files_by_round_int(self, round: int) -> List[NormalFile]:
 		key = "%s(2)" % (round)
-		if key not in self.files_dict:
-			key = "%s" % (round)
-			if key not in self.files_dict:
-				raise KeyError("%s is not in the %s" % (key, self.files_dict))
-		files = self.files_dict[key]
+		if key in self.files_dict:
+			files = self.files_dict[key]
+		else:
+			files = []
+		key = "%s" % (round)
+		if key in self.files_dict:
+			files.extend(self.files_dict[key])
+		if len(files) == 0:
+			raise KeyError("%s is not in the %s" % (key, self.files_dict))
 		return files
 
 	def clear(self):
