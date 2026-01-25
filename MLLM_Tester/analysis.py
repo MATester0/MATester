@@ -181,6 +181,8 @@ class Analysis():
 			if snapshot_file == None:
 				locations.append("1.4")
 				return locations
+		if snapshot_file == None:
+			return locations
 		
 		if not isinstance(snapshot_file, SnapshotFile):
 			raise TypeError("the snapshot file %s is not of the correct type" % (snapshot_file.get_file_path()))
@@ -315,6 +317,9 @@ class Analysis():
 		plan_file = self.files.get_file_by_round_int_and_name(max_round, "plan")
 		if plan_file == None and prompt_file != None:
 			locations.append("2.6")
+			return locations
+		
+		if plan_file == None and prompt_file == None:
 			return locations
 		
 		if not isinstance(prompt_file, PromptFile) or not isinstance(plan_file, PlanFile):
@@ -558,7 +563,7 @@ class Analysis():
 		plan_file = self.files.get_file_by_round_int_and_name(max_round, "plan")
 		action_file = self.files.get_file_by_round_int_and_name(max_round, "action")
 		reflect_file = self.files.get_file_by_round_int_and_name(max_round, "reflect")
-		assert(plan_file != None)
+		# assert(plan_file != None)
 
 		
 		if action_file == None and reflect_file == None:
@@ -566,15 +571,15 @@ class Analysis():
 			return locations
 
 		if action_file != None:
-			if not isinstance(plan_file, PlanFile) or not isinstance(action_file, ActionFile):
-				raise TypeError("the plan file %s or action file are not of the correct type" % (plan_file.get_file_path(), action_file.get_file_path()))
+			if not isinstance(action_file, ActionFile):
+				raise TypeError("the action file %s is not of the correct type" % (action_file.get_file_path()))
 			
 			if action_file.get_content().replace("\n", "").strip() == "":
 				locations.append("3.4")
 				return locations
 			
 			# 3.1: action is different from the plan
-			if not self.__check_action_relation(plan_file, action_file):
+			if plan_file != None and not self.__check_action_relation(plan_file, action_file):
 				locations.append("3.1")
 				return locations
 		
