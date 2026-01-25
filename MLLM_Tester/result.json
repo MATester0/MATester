@@ -6922,5 +6922,352 @@
       "1.1.2",
       "2.3.2"
     ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "find a random music",
+    "symptom": 1,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "play a random music",
+    "symptom": 1,
+    "locations": [
+      "1.1.1",
+      "1.1.3",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "search for the capital of US",
+    "symptom": 1,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "search for the capital of US",
+    "symptom": 1,
+    "locations": [
+      "1.1.3",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "find the most popular movie this year",
+    "symptom": 1,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "find the most popular movie this year",
+    "symptom": 1,
+    "locations": [
+      "1.1.1",
+      "1.1.3",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "find the location of Tencent Shanghai Branch",
+    "symptom": 1,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "find the location of Tencent Shanghai Branch",
+    "symptom": 1,
+    "locations": [
+      "1.1.3",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "tell me the capital of America",
+    "symptom": 3,
+    "locations": [
+      "1.1.1",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "tell me the capital of America",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "play the most popular last year",
+    "symptom": 4,
+    "locations": [
+      "1.1.1"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "play the most popular last year",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "what date is it today",
+    "symptom": 1,
+    "locations": [
+      "1.1.1",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "what date is it today",
+    "symptom": 3,
+    "locations": [
+      "1.1.1",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 0,
+    "task name": "when is the next Chinese festival",
+    "symptom": 1,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 2,
+    "times": 1,
+    "task name": "when is the next Chinese festival",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Clock' app and open it",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Clock' app and open it",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Clock' app and open it, set a 2-minute timer",
+    "symptom": 3,
+    "locations": []
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Clock' app and open it, set a 2-minute timer",
+    "symptom": 3,
+    "locations": []
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Calendar' app and open it, create a new event, the task is 'daily', save it",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Calendar' app and open it, create a new event, the task is 'daily', save it",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Calendar' app and open it, change the view to monthly",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Calendar' app and open it, change the view to monthly",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Calendar' app and open it, add the holidays of US to the calendar",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Calendar' app and open it, add the holidays of US to the calendar",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Google Map' and open it, find the location of Tencent Shanghai Branch",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Google Map' and open it, find the location of Tencent Shanghai Branch",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Google' and open it, find the capital of US",
+    "symptom": 2,
+    "locations": [
+      "1.1.2",
+      "3.2.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Google' and open it, find the capital of US",
+    "symptom": 1,
+    "locations": [
+      "2.7",
+      "3.2.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "play a random music",
+    "symptom": 3,
+    "locations": [
+      "2.2.1",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "play a random music",
+    "symptom": 3,
+    "locations": [
+      "1.4",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "find the most popular movie this year",
+    "symptom": 2,
+    "locations": [
+      "2.1",
+      "2.2.1",
+      "2.3.3",
+      "3.2.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "find the most popular movie this year",
+    "symptom": 1,
+    "locations": [
+      "2.1",
+      "2.2.1",
+      "3.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "search 'Clock' app and open it, set the snooze time to 5 minute",
+    "symptom": 1,
+    "locations": [
+      "2.7",
+      "3.2.1"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 1,
+    "task name": "search 'Clock' app and open it, set the snooze time to 5 minute",
+    "symptom": 2,
+    "locations": [
+      "1.4",
+      "3.1"
+    ]
   }
 ]
