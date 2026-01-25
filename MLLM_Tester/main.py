@@ -108,6 +108,10 @@ def arg_parse():
 # 	op = os.path.join(os.path.abspath(cs.OUTPUT_DIR), str(al), re.sub(r'[^a-zA-Z0-9]', '_', tn))
 # 	runinfo = runTimeInfo()
 # 	runinfo.intialize_and_dump_info(al, tn, eo, st, et, op)
+	# info = runTimeInfo.get_info("..\\output\\8\\search__Clock__app_and_open_it__set_a_2_minute_timer")
+	# info.output_path = "..\\output\\8\\search__Clock__app_and_open_it__set_a_2_minute_timer"
+	# info.dump_info()
+	# info = runTimeInfo.get_info("..\\output\\8\\search__Clock__app_and_open_it__set_a_2_minute_timer")
 
 def main():
 	""" examples:
