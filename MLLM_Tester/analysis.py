@@ -8,7 +8,7 @@ from util.clip import Clip
 from util.tool import Tools
 from util.encoder import TextEmbedder
 from util.log import LogManager
-from util.constants import HARD_POSSIBILITY_LEVEL, LOOSE_POSSIBILITY_LEVEL, ENV_SNAP_COMP_PROMPT, SNAP_LABEL_PROMPT, PROMPT_QUALITY_PROMPT, PLAN_QUALITY_PROMPT, PLAN_SNAP_FIG_SATIS_PROMPT, PLAN_SNAP_TXT_SATIS_PROMPT, TASK_COMPLT_PROMPT, PLAN_ENV_RELAT_PROMPT, PLAN_ACT_COMP_PROMPT, MAX_LLM_QUERY_TIMES, MAX_LLM_RETRY_TIMES
+from util.constants import HARD_POSSIBILITY_LEVEL, LOOSE_POSSIBILITY_LEVEL, ENV_SNAP_COMP_PROMPT, SNAP_LABEL_PROMPT, PROMPT_QUALITY_PROMPT, PLAN_QUALITY_PROMPT, PLAN_SNAP_FIG_SATIS_PROMPT, PLAN_SNAP_TXT_SATIS_PROMPT, TASK_COMPLT_PROMPT, PLAN_ENV_RELAT_PROMPT, PLAN_ENV_RELAT_PROMPT_NO_ENV, PLAN_ACT_COMP_PROMPT, MAX_LLM_QUERY_TIMES, MAX_LLM_RETRY_TIMES
 
 from management.errorType import ErrorType
 from management.runInfo import runTimeInfo
@@ -346,8 +346,8 @@ class Analysis():
 
 		# 2.2: plan does not satisfy the constraints given by the snapshot 
 		snapshot_file = self.files.get_file_by_round_int_and_name(max_round, "snapshot")
-		assert(snapshot_file != None)
-		if not self.__check_plan_satisfy_snapshot(plan_file, snapshot_file):
+		# assert(snapshot_file != None)
+		if snapshot_file != None and not self.__check_plan_satisfy_snapshot(plan_file, snapshot_file):
 			# 2.2.1: plan and snapshot have the same modality, but plan does not meet the requirements
 			if plan_file.get_type() == snapshot_file.get_type():
 				locations.append("2.2.1")
@@ -369,8 +369,8 @@ class Analysis():
 				if max_round >= 1:
 					# max_round >= 1, get last environment file to judge the completion of the task
 					environment_file = self.files.get_file_by_round_int_and_name(max_round - 1, "environment")
-					if environment_file == None:
-						raise FileNotFoundError("the environment file environment_%s.png does not exist" % (max_round - 1))
+					# if environment_file == None:
+						# raise FileNotFoundError("the environment file environment_%s.png does not exist" % (max_round - 1))
 			
 			if self.error_type == ErrorType.timeout or self.error_type == ErrorType.roundout:
 					
@@ -380,7 +380,7 @@ class Analysis():
 			
 			# 2.3.3: plan cannot promote the task
 			task_name = self.runtime.get_task_name()
-			if environment_file != None and task_name != None and not self.__check_plan_relation(environment_file, plan_file, task_name):
+			if task_name != None and not self.__check_plan_relation(environment_file, plan_file, task_name):
 				locations.append("2.3.3")
 		return locations
 
@@ -532,15 +532,21 @@ class Analysis():
 	@LogManager.log_input_and_output()
 	def __check_plan_relation(self, environment_file: EnvironmentFile, plan_file: PlanFile, task: str) -> bool:
 		# complete: true, not complete: false
-		if not environment_file.is_image() and not plan_file.is_text():
+		if environment_file != None and not environment_file.is_image() and not plan_file.is_text():
 			raise TypeError("the environment file should be image and the plan file should be text")
-		prompt = PLAN_ENV_RELAT_PROMPT % (plan_file.get_content(), task)
+		if environment_file == None:
+			prompt = PLAN_ENV_RELAT_PROMPT_NO_ENV % (plan_file.get_content(), task)
+		else:
+			prompt = PLAN_ENV_RELAT_PROMPT % (plan_file.get_content(), task)
 		query_times = 0
 		max_retry_time = 0
 		decision_count = {True: 0, False: 0}
 		while query_times < MAX_LLM_QUERY_TIMES and max_retry_time < MAX_LLM_RETRY_TIMES:
 			try:
-				response = self.llm.infer(prompt, [environment_file.get_file_path()], system_prompt="You are a helpful assistant that is good at determining whether the plan can promote the task.")
+				if environment_file == None:
+					response = self.llm.infer(prompt, [], system_prompt="You are a helpful assistant that is good at determining whether the plan can promote the task.")
+				else:
+					response = self.llm.infer(prompt, [environment_file.get_file_path()], system_prompt="You are a helpful assistant that is good at determining whether the plan can promote the task.")
 				response_dict = Tools.load_json(response)
 				decision = response_dict["Promotion"]
 				decision_count[bool(decision)] += 1
@@ -807,9 +813,9 @@ class Analysis():
 		max_round = err_file.get_max_round()
 		snapshot_file = err_file.get_file_by_round_int_and_name(max_round, "snapshot")
 		environment_file = err_file.get_file_by_round_int_and_name(max_round, "environment")
-		
-		assert(environment_file != None) # environment file cannot be None, otherwise there should be no problem
-		assert(snapshot_file != None) # snapshot file cannot be None, otherwise problem is 1.4
+
+		if environment_file == None or snapshot_file == None:
+			return locations
 
 		environment_file_embedding = self.clip_embedder.get_embedding(environment_file)
 		if snapshot_file.is_image():
@@ -870,23 +876,31 @@ class Analysis():
 		prompt_file = err_file.get_file_by_round_int_and_name(max_round, "prompt")
 		plan_file = err_file.get_file_by_round_int_and_name(max_round, "plan")
 		snapshot_file = err_file.get_file_by_round_int_and_name(max_round, "snapshot")
+
+		if prompt_file == None or plan_file == None:
+			return locations
 		
-		assert(prompt_file != None) # prompt file cannot be None, otherwise there should be no problem
-		assert(plan_file != None) # plan file cannot be None, otherwise problem is 2.6
-		assert(snapshot_file != None) # snapshot file cannot be None, otherwise there should be no problem
+		# assert(prompt_file != None) # prompt file cannot be None, otherwise there should be no problem
+		# assert(plan_file != None) # plan file cannot be None, otherwise problem is 2.6
+		# assert(snapshot_file != None) # snapshot file cannot be None, otherwise there should be no problem
 
 		# prompt_file_embedding = self.clip_embedder.get_embedding(prompt_file)
 		plan_file_embedding = self.text_embedder.get_embedding(plan_file)
-		if snapshot_file.is_image():
-			snapshot_file_embedding = self.clip_embedder.get_embedding(snapshot_file)
+		if snapshot_file != None:
+			if snapshot_file.is_image():
+				snapshot_file_embedding = self.clip_embedder.get_embedding(snapshot_file)
+			else:
+				snapshot_file_embedding = self.text_embedder.get_embedding(snapshot_file)
 		else:
-			snapshot_file_embedding = self.text_embedder.get_embedding(snapshot_file)
+			# use prompt to replace snpashot
+			snapshot_file_embedding = self.text_embedder.get_embedding(prompt_file)
 
 
 		#  maybe prompt similarity is not necessary? they all use templates
 		for r in range(rit_file.get_max_round() + 1):
-			# comp_prmp_file = rit_file.get_file_by_round_int_and_name(r, "prompt")
 			comp_snp_file = rit_file.get_file_by_round_int_and_name(r, "snapshot")
+			if comp_snp_file == None and snapshot_file == None:
+				comp_snp_file = rit_file.get_file_by_round_int_and_name(r, "prompt")
 			comp_plan_file = rit_file.get_file_by_round_int_and_name(r, "plan")
 			
 			# if comp_prmp_file != None and comp_snp_file != None:
