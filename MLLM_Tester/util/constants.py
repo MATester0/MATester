@@ -153,6 +153,26 @@ The task is:
 \'\'\'
 '''
 
+PLAN_ENV_RELAT_PROMPT_NO_ENV = '''Please predict whether the plan can promote the task. The plan is used to conduct an action to gradually complete a task.
+
+Your output should be in the following json format:
+
+{
+	"Thought": <Show your thinking process and describe why the plan can or cannot promote the task in short words>,
+	"Promotion": <Determine whether the plan can promote the task. The value should be boolean>
+}
+
+The plan is:
+\'\'\'
+%s
+\'\'\'
+
+The task is:
+\'\'\'
+%s
+\'\'\'
+'''
+
 PLAN_ACT_COMP_PROMPT = '''Please identify whether the action is related to the plan. The plan is a description of a step taken by the agent to complete a task. The plan is in natural language. The agent then calls a specific API to conduct that plan, which is represented by the action. A related action should satisfy the following two rules.
 1. The API name called by the action has similar semantics as the plan.
 2. If the action is an input action, the texts to be inputted as shown in the plan should be correctly transformed into a parameter in the action.
