@@ -178,7 +178,8 @@ class Analysis():
 				locations.append("1.4")
 				return locations
 		else:
-			if snapshot_file == None:
+			environment_file = self.files.get_file_by_round_int_and_name(max_round, "environment")
+			if snapshot_file == None and environment_file != None:
 				locations.append("1.4")
 				return locations
 		if snapshot_file == None:
