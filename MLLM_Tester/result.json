@@ -2379,5 +2379,192 @@
       "1.4",
       "3.1"
     ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "obtain_firebrands",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "obtain_firebrands",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "acquire_torch",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "acquire_torch",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "get_planks",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "get_planks",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "obtain_planks",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "obtain_planks",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "get_two_plank",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "get_two_plank",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "obtain_timbers",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "obtain_timbers",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "get_a_timber",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "get_a_timber",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "obtain_wooden_slab",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "obtain_wooden_slab",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "obtain_bed",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "obtain_bed",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 0,
+    "task name": "obtain_chest_minecart",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
+  },
+  {
+    "agent id": 13,
+    "times": 1,
+    "task name": "obtain_chest_minecart",
+    "symptom": 4,
+    "locations": [
+      "2.7",
+      "3.4"
+    ]
   }
 ]
