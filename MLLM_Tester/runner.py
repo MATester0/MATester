@@ -9,7 +9,7 @@ from management.runInfo import runTimeInfo
 class Runner():
 	def __init__(self):
 		self.runtime = runTimeInfo()
-		self.git_bash_path = "D:\\Git\\bin\\bash.exe"
+		self.git_bash_path = "bash"
 
 	def run(self, agent_label: int, task: str, apk_id: str, running_times: int = 0, analyzing_existing = True):
 		self.runtime = runTimeInfo()
@@ -93,7 +93,7 @@ class Runner():
 				if task_name == None:
 					result = subprocess.run(
 						[self.git_bash_path, script_path, self.output_path, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE)],
-						shell=True,		  # do not use shell for safety
+						shell=False,		  # do not use shell for safety
 						check=True,           # if return 0 then throw execption
 						capture_output=True,  # catch outputs
 						text=True,            # return textual format
@@ -104,7 +104,7 @@ class Runner():
 				else:
 					result = subprocess.run(
 						[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE)],
-						shell=True,
+						shell=False,
 						check=True,           # if return 0 then throw execption
 						capture_output=True,  # catch outputs
 						text=True,            # return textual format
@@ -116,7 +116,7 @@ class Runner():
 				assert(task_name != None)
 				result = subprocess.run(
 					[self.git_bash_path, script_path, self.output_path, task_name, str(MAX_INTERACTION_ROUND), str(MAX_INTERACTION_MINUTE), apk_id],
-					shell=True,		  # do not use shell for safety
+					shell=False,		  # do not use shell for safety
 					check=True,           # if return 0 then throw execption
 					capture_output=True,  # catch outputs
 					text=True,            # return textual format
