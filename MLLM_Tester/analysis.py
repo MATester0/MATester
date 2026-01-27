@@ -34,8 +34,8 @@ class Analysis():
 		self.symptom_dict = {
 			1: "report error and crash",
 			2: "hang",
-			3: "stop without completing the task",
-			4: "incorrect behavior (but do not crash)",
+			3: "incorrect behavior (but do not crash)",
+			4: "stop without completing the task",
 			5: "inconsistent behavior under the same setting",
 			6: "unfriendly user interface"
 		}
@@ -69,7 +69,7 @@ class Analysis():
 		elif error_type == ErrorType.hang:
 			symptom = 2
 		elif error_type == ErrorType.timeout or error_type == ErrorType.roundout or error_type == ErrorType.error:
-			symptom = 4
+			symptom = 3
 		elif error_type == ErrorType.finish:
 			# only considers termination if the task is available
 			if self.runtime.get_task_name() != None:
@@ -79,7 +79,7 @@ class Analysis():
 					# raise FileNotFoundError("the environment file does not exist: environment_%s.png" % (max_round))
 					environment_file = self.files.get_file_by_round_int_and_name(max_round - 1, "environment")
 				if environment_file != None and not self.__check_task_completion(environment_file, self.runtime, problematic_value = False):
-					symptom = 3
+					symptom = 4
 		else:
 			raise ValueError("the value type of " + error_type + " cannot be recognized")
 		return symptom
@@ -148,11 +148,11 @@ class Analysis():
 		if len(perception_locs) != 0:
 			self.locations.extend(perception_locs)
 			planner_locs = []
-			if symptom_label == 3:
+			if symptom_label == 4:
 				planner_locs.append("2.3.2")
 				self.locations.extend(planner_locs)
 		else:
-			# check Planner if there is no problem in Perception or symptom == 3
+			# check Planner if there is no problem in Perception or symptom == 4
 			planner_locs = self.__check_Planner()
 			if len(planner_locs) != 0:
 				self.locations.extend(planner_locs)
@@ -226,17 +226,17 @@ class Analysis():
 			# 1.1.2: snapshot and environment have different modalities, but different content
 			else:
 				locations.append("1.1.2")
-		# 1.1.3: snapshot is labeled, but labels are wrong or incomplete
+		# 1.5: snapshot is labeled, but labels are wrong or incomplete
 		if snapshot_file.is_image():
 			correctness = self.__check_label_correctness(environment_file, snapshot_file)
 			if correctness == -1:
 				snapshot_file.set_label(False)
-				locations.append("1.1.3")
+				locations.append("1.5")
 				return locations
 			else:
 				snapshot_file.set_label(True)
 				if correctness == False:
-					locations.append("1.1.3")
+					locations.append("1.5")
 					return locations
 		return locations
 
