@@ -117,7 +117,7 @@ agents/*
 !agents/.gitkeep
 
 # ----- dataset -----
-dataset/*.xlsx
+# dataset/*.xlsx
 *.xlsx
 
 # ----- output -----
