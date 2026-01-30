@@ -54,7 +54,6 @@ The prompt is:
 %s
 \'\'\'
 
-
 '''
 
 PLAN_QUALITY_PROMPT = '''Please check the quality of a plan. The plan is used to guide an agent to gradually complete a task. The plan is generated based on a prompt. A good plan should satisfy the following two rules. 
