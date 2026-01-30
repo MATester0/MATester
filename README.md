@@ -5,7 +5,7 @@ This repository contains the source code of MATester, datasets and agents for th
 
 ## How to install
 
-To run MATester, make sure you have `Python 3.8`. The agents that MATester runs require specific preparations, please refer to their README to install these dependencies.
+To run MATester, make sure you have `Python 3.8`. 
 
 Then clone this repo and install with `pip`:
 
@@ -33,9 +33,13 @@ pip install -r requirements.txt
    ```
 
 
-## About agents
+## About test cases and agents
 
-The 10 agents are stored in the agents folder. They are named as \<agent id\>-\<agent_name\>. Only the 10 agents listed here are available for testing.
+### Test cases
+The test cases are available in the `dataset` directory. The `apks` directory stored the installed apk files for GUI automated M-agents. The "datasets.xlsx" file stores the tasks in 4 different scenarios.
+
+### Agents
+The 7 agents are avaiable here. Please download them and put them in the `agents` folder. They are named as \<agent id\>-\<agent_name\>. Only the 7 agents listed here are instrumented and available for testing.
 
 ## Note
 
