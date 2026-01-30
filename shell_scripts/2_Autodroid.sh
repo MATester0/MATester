@@ -3,7 +3,7 @@ TASK=$2
 ROUND=$3
 TIME=$4"m"
 APKNAME=$5".apk"
-cd ../agents/3-AutoDroid/AutoDroid
+cd ../agents/2-AutoDroid/AutoDroid
 source activate base
 echo $OUTPUTDIR
 echo $TASK

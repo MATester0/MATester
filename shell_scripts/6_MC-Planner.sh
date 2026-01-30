@@ -2,7 +2,7 @@ OUTPUTDIR=$1
 TASK=$2
 ROUND=$3
 TIME=$4"m"
-cd ../agents/13-MC-Planner
+cd ../agents/6-MC-Planner
 source activate planner
 echo $OUTPUTDIR
 echo $ROUND

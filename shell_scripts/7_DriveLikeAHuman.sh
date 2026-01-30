@@ -1,7 +1,7 @@
 OUTPUTDIR=$1
 ROUND=$2
 TIME=$3"m"
-cd ../agents/18-DriveLikeAHuman
+cd ../agents/7-DriveLikeAHuman
 source activate gptdriver
 echo $OUTPUTDIR
 echo $ROUND

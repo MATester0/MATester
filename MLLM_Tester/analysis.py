@@ -395,7 +395,7 @@ class Analysis():
 		if task != None:
 			prompt += f"The task that this prompt should describe is:\n'''\n{task}\n'''"
 		apk_id = runTime.get_apk_id()
-		if apk_id != "" and runTime.get_agent_label() == 6:
+		if apk_id != "" and runTime.get_agent_label() == 3:
 			# the 6th agent provides app name specifically in the inputs, so the app name is also added to the task
 			prompt += "\nThe task should be conducted in the app: %s.\n" % (apk_id)
 		query_times = 0
@@ -492,7 +492,7 @@ class Analysis():
 		task = runTime.get_task_name()
 		prompt = TASK_COMPLT_PROMPT % (task)
 		apk_id = runTime.get_apk_id()
-		if apk_id != "" and runTime.get_agent_label() == 6:
+		if apk_id != "" and runTime.get_agent_label() == 3:
 			# the 6th agent provides app name specifically in the inputs, so the app name is also added to the task
 			prompt += "The task should be conducted in the app: %s.\n" % (apk_id)
 		query_times = 0

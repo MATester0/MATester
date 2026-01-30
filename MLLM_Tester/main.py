@@ -13,7 +13,7 @@ def validate_id_exists(value):
 	"""
 	try:
 		id = int(value)
-		if id not in [2, 3, 6, 7, 8, 18]:
+		if id not in [1, 2, 3, 4, 5, 6, 7]:
 			raise argparse.ArgumentTypeError(f"agent id {id} is not available")
 		return id
 	except ValueError:
@@ -23,9 +23,9 @@ def check_args_logics(args):
 	id = args.agent_id
 	task = args.task_name
 	apk = args.apk_name
-	if id in [2, 8] and not task:
+	if id in [1, 5, 6] and not task:
 		return False
-	if id in [3, 6, 7] and (not task or not apk):
+	if id in [2, 3, 4] and (not task or not apk):
 		return False
 	return True
 
@@ -39,13 +39,13 @@ def arg_parse():
 	epilog=textwrap.dedent('''
 	example:
 	# base usage: identify agent id and task name
-	python main.py -i 2 -t "play a random music"
+	python main.py -i 1/5/6 -t "play a random music"
 
 	# specific usage: require installation of APKs
-	python main.py -i 3/6/7 -t "search for the 'clock' app and open it" -a "com.simplemobiletools.applauncher"
+	python main.py -i 2/3/4 -t "search for the 'clock' app and open it" -a "com.simplemobiletools.applauncher"
 						
 	# scenario-based agent: no task name
-	python main.py -i 18
+	python main.py -i 7
 	''')
 	)
 
@@ -115,11 +115,11 @@ def arg_parse():
 
 def main():
 	""" examples:
-		run_info = rn.run(2, "find a random music", None, analyzing_existing=True)
+		run_info = rn.run(1, "find a random music", None, analyzing_existing=True)
+		run_info = rn.run(2, "search 'Clock' app and open it", "com.simplemobiletools.applauncher", analyzing_existing=True)
 		run_info = rn.run(3, "search 'Clock' app and open it", "com.simplemobiletools.applauncher", analyzing_existing=True)
-		run_info = rn.run(6, "search 'Clock' app and open it", "com.simplemobiletools.applauncher", analyzing_existing=True)
-		run_info = rn.run(7, "search 'Clock' app and open it", "com.simplemobiletools.applauncher", analyzing_existing=True)
-		run_info = rn.run(8, "search 'Clock' app and open it, set a 2-minute timer", None, analyzing_existing=False)
+		run_info = rn.run(4, "search 'Clock' app and open it", "com.simplemobiletools.applauncher", analyzing_existing=True)
+		run_info = rn.run(5, "search 'Clock' app and open it, set a 2-minute timer", None, analyzing_existing=False)
 	"""
 	args = arg_parse()
 

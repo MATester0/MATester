@@ -4,7 +4,7 @@ ROUND=$3
 TIME=$4"m"
 APKID=$5
 APKNAME=$APKID".apk"
-cd ../agents/6-AppAgent
+cd ../agents/3-AppAgent
 source activate pytorch
 echo $OUTPUTDIR
 echo $TASK

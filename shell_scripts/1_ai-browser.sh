@@ -2,7 +2,7 @@ OUTPUTDIR=$1
 TASK=$2
 ROUND=$3
 TIME=$4"m"
-cd ../agents/2-ai-browser/ai-browser
+cd ../agents/1-ai-browser/ai-browser
 echo $OUTPUTDIR
 echo $TASK
 echo $ROUND
