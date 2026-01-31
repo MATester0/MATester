@@ -31,7 +31,7 @@ The 7 agents are avaiable [here](https://drive.google.com/file/d/1fJqGcPe79_x-Lt
     ```
 
 
-    + Prepare an openAI API key. We use Azure openAI to query the GPT-4o, please deploy the GPT-4o on Azure in advance. Fullfill blanks in the "config_template.ini" file under the `MLLM_Tester`` folder and rename it as "config.ini". 
+    + Prepare an openAI API key. We use Azure openAI to query the GPT-4o, please deploy the GPT-4o on Azure in advance. Fullfill blanks in the "config_template.ini" file under the `MLLM_Tester` folder and rename it as "config.ini". 
 
 2. Start:
 
