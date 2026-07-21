@@ -73,7 +73,7 @@ DriveLikeAHuman is a M-agent that conducts automatic driving on a highway with h
 
 First of all, we notice that the Perceptor manifests the W-S issue in the 4-th interaction round. The $environment_4$ and $snapshot_4$ are shown below. The $snapshot_4$ is different from $environment_4$ from two aspects: 1). The lane_3 does not exist in the environment. 2). Two cars are missing in the snapshot. By randomly setting the initial environmnet, we reveal weaknesses in its Perceptor.
 
-![environment_4](assets\environment_4.png)
+![environment_4](assets/environment_4.png)
 <center>environment_4</center>
 
 ```text
