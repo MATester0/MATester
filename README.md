@@ -20,7 +20,7 @@ pip install -r requirements.txt
 The test cases are available in the `dataset` directory. The `apks` directory contains the required apk files for GUI automated M-agents. The "datasets.xlsx" file contains the tasks in 4 different scenarios.
 
 ### Agents
-The 7 agents are avaiable [here](https://drive.google.com/file/d/1fJqGcPe79_x-LtI3ssMGoFtDl0EzZBss/view?usp=drive_link). Please download them and put them in the `agents` folder. They are named as \<agent id\>-\<agent_name\>. Only the 7 agents here are instrumented and available for testing.
+The 12 agents are avaiable [here](https://drive.google.com/file/d/1fJqGcPe79_x-LtI3ssMGoFtDl0EzZBss/view?usp=drive_link). Please download them and put them in the `agents` folder. They are named as \<agent id\>-\<agent_name\>. Only the 12 agents here are instrumented and available for testing.
 
 To test other agents, please ensure that the agents' inter-component outputs are in the correct format. Add scripts to invoke the agents in the `shell_scripts` folder. The script should start with an unique \<agent id\>, which helps MATester to localize the script.
 
