@@ -118,18 +118,18 @@ agents/*
 
 # ----- dataset -----
 # dataset/*.xlsx
-*.xlsx
+# *.xlsx
 
 # ----- output -----
-output/
+# output/
 
 # ----- model -----
-MLLM_Tester/openai/
+MATester/openai/
 
 # ----- config -----
-MLLM_Tester/config.ini
+MATester/config.ini
 
-# MLLM_Tester/run_dataset.py
-MLLM_Tester/run-all.sh
+# MATester/run_dataset.py
+MATester/run-all.sh
 remote.txt
 config.ini
