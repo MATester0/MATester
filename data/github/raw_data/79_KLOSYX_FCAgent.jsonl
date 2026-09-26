@@ -1,0 +1,27 @@
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 27, "url": "https://github.com/KLOSYX/FCAgent/pull/27", "status": "closed", "title": "Feat/uv support new requirements", "time": 20250501}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 26, "url": "https://github.com/KLOSYX/FCAgent/pull/26", "status": "closed", "title": "Update ask llm", "time": 20240515}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 25, "url": "https://github.com/KLOSYX/FCAgent/pull/25", "status": "closed", "title": "update: rank scheme in SummarizerScheme", "time": 20240514}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 24, "url": "https://github.com/KLOSYX/FCAgent/pull/24", "status": "closed", "title": "fix: improved OCR handling in fact_checker", "time": 20240514}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 23, "url": "https://github.com/KLOSYX/FCAgent/pull/23", "status": "closed", "title": "support streaming tool output", "time": 20240514}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 22, "url": "https://github.com/KLOSYX/FCAgent/pull/22", "status": "closed", "title": "fix: raise error for unknown agent in get_agent.py", "time": 20240514}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 21, "url": "https://github.com/KLOSYX/FCAgent/pull/21", "status": "closed", "title": "Error handle", "time": 20240514}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 20, "url": "https://github.com/KLOSYX/FCAgent/pull/20", "status": "closed", "title": "Update __init__.py", "time": 20240513}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 19, "url": "https://github.com/KLOSYX/FCAgent/pull/19", "status": "closed", "title": "refactor image-based tools", "time": 20240513}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 18, "url": "https://github.com/KLOSYX/FCAgent/pull/18", "status": "closed", "title": "fix: regex patter in extract_tool_use", "time": 20240513}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 17, "url": "https://github.com/KLOSYX/FCAgent/pull/17", "status": "closed", "title": "update: error handling wrapper for all tools", "time": 20240513}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 16, "url": "https://github.com/KLOSYX/FCAgent/pull/16", "status": "closed", "title": "add README_CN.md", "time": 20240513}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 15, "url": "https://github.com/KLOSYX/FCAgent/pull/15", "status": "closed", "title": "fix: system prompt in shoggoth13_react_json.py", "time": 20240511}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 14, "url": "https://github.com/KLOSYX/FCAgent/pull/14", "status": "closed", "title": "feat: add error handling for web content browse and search", "time": 20240511}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 13, "url": "https://github.com/KLOSYX/FCAgent/pull/13", "status": "closed", "title": "Fix AGENT_REGEX to support list arg", "time": 20240511}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 12, "url": "https://github.com/KLOSYX/FCAgent/pull/12", "status": "closed", "title": "Add Chinese ReAct template", "time": 20240511}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 11, "url": "https://github.com/KLOSYX/FCAgent/pull/11", "status": "closed", "title": "Remove GitHub workflow: pylint", "time": 20240415}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 10, "url": "https://github.com/KLOSYX/FCAgent/pull/10", "status": "closed", "title": "Update pylint.yml", "time": 20240415}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 9, "url": "https://github.com/KLOSYX/FCAgent/pull/9", "status": "closed", "title": "Create pylint.yml", "time": 20240415}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 8, "url": "https://github.com/KLOSYX/FCAgent/pull/8", "status": "closed", "title": "Support constrained decoding in VLLM", "time": 20240415}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 7, "url": "https://github.com/KLOSYX/FCAgent/pull/7", "status": "closed", "title": "update: merge summarizer to agent", "time": 20240410}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 6, "url": "https://github.com/KLOSYX/FCAgent/pull/6", "status": "closed", "title": "Query router", "time": 20240409}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 5, "url": "https://github.com/KLOSYX/FCAgent/pull/5", "status": "closed", "title": "Add OCR capability", "time": 20240408}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 4, "url": "https://github.com/KLOSYX/FCAgent/pull/4", "status": "closed", "title": "Openai tools agent cn", "time": 20240313}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 3, "url": "https://github.com/KLOSYX/FCAgent/pull/3", "status": "closed", "title": "update prompt", "time": 20240313}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 2, "url": "https://github.com/KLOSYX/FCAgent/pull/2", "status": "closed", "title": "update README.md", "time": 20240313}
+{"agent ID": 79, "type": "pull request", "issue / pull request ID": 1, "url": "https://github.com/KLOSYX/FCAgent/pull/1", "status": "closed", "title": "Openai tools agent cn", "time": 20240313}

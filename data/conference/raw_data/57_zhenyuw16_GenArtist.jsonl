@@ -1,0 +1,10 @@
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 10, "url": "https://github.com/zhenyuw16/GenArtist/issues/10", "status": "open", "title": "这个环境有能装成功的?", "time": 20250729}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 9, "url": "https://github.com/zhenyuw16/GenArtist/issues/9", "status": "open", "title": "input_detection.json does not exist", "time": 20250425}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 8, "url": "https://github.com/zhenyuw16/GenArtist/issues/8", "status": "open", "title": "question of envirenment", "time": 20250218}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 7, "url": "https://github.com/zhenyuw16/GenArtist/issues/7", "status": "open", "title": "Where can I find this "input_detection.json"?", "time": 20250216}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 6, "url": "https://github.com/zhenyuw16/GenArtist/issues/6", "status": "open", "title": "为什么我用相同的提示词出来的效果却和论文里面的完全不同呢?", "time": 20241222}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 5, "url": "https://github.com/zhenyuw16/GenArtist/issues/5", "status": "open", "title": "Questions about the environments", "time": 20240906}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 4, "url": "https://github.com/zhenyuw16/GenArtist/issues/4", "status": "open", "title": "ModuleNotFoundError: No module named 'image_generator'", "time": 20240808}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 3, "url": "https://github.com/zhenyuw16/GenArtist/issues/3", "status": "open", "title": "Code for interacting with MLLM", "time": 20240801}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 2, "url": "https://github.com/zhenyuw16/GenArtist/issues/2", "status": "open", "title": "Can the tools used be updated / changed with different ones?", "time": 20240725}
+{"agent ID": 57, "type": "issue", "issue / pull request ID": 1, "url": "https://github.com/zhenyuw16/GenArtist/issues/1", "status": "open", "title": "FileNotFoundError: [Errno 2] No such file or directory: 'cname7k.json'", "time": 20240715}

@@ -1,0 +1,6 @@
+{"agent ID": 29, "type": "issue", "issue / pull request ID": 178, "url": "https://github.com/microsoft/muzic/issues/178", "status": "closed", "title": "[MusicAgent] The dependent libraries are confilcts.", "time": 20231206}
+{"agent ID": 29, "type": "issue", "issue / pull request ID": 214, "url": "https://github.com/microsoft/muzic/issues/214", "status": "open", "title": "[muzic/roc]请问大佬们roc的readme中说的checkpoint file在哪下", "time": 20250505}
+{"agent ID": 29, "type": "issue", "issue / pull request ID": 200, "url": "https://github.com/microsoft/muzic/issues/200", "status": "open", "title": "AttributeError: module 'semantic_kernel' has no attribute 'openai_settings_from_dot_env'", "time": 20240618}
+{"agent ID": 29, "type": "issue", "issue / pull request ID": 181, "url": "https://github.com/microsoft/muzic/issues/181", "status": "open", "title": "【MusicAgent】Database has not enough pieces to support ROC.", "time": 20231214}
+{"agent ID": 29, "type": "issue", "issue / pull request ID": 179, "url": "https://github.com/microsoft/muzic/issues/179", "status": "open", "title": "ckpt not found in checkpoints/0102_xiaoma_pe", "time": 20231207}
+{"agent ID": 29, "type": "issue", "issue / pull request ID": 177, "url": "https://github.com/microsoft/muzic/issues/177", "status": "open", "title": "ModuleNotFoundError: No module named 'midi2dict'", "time": 20231204}
