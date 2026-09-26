@@ -1,0 +1,15 @@
+USER RESPONSIBLE ISSUES:
+usage issue
+dependency issue
+configuration issue
+
+DEVELOPER RESPONSIBLE ISSUES:
+import issue
+dependency issue
+functionality issue
+functionality issue (not agent)
+version compatibility issue
+cross-system compatibility issue
+
+FALSE POSITIVE ISSUES:
+not an issue

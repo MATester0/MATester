@@ -1,0 +1,6 @@
+1   crash
+2   unrespond
+3   incorrect behavior (misbehave)
+4   mis-notify the exit (mis-signal)
+5   inconsistent behavior under the same setting (diverge)
+6   user interface provides wrong information (misinform)

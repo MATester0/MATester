@@ -1,0 +1,7 @@
+1   concurrency
+2   corner case gaps
+3   LLM’s limitation.
+4   unsuitable llm parameters (bad parameters)
+5   error case gaps
+6   lack of persistent memories for task execution experience (No persistent memory)
+7   Incorrect code semantics (incorrect semantics)
