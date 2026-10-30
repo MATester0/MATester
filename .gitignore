@@ -115,6 +115,7 @@ Thumbs.db
 # ----- agents -----
 agents/*
 !agents/.gitkeep
+~*.xlsx
 
 # ----- dataset -----
 # dataset/*.xlsx
