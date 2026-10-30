@@ -1,0 +1,4 @@
+{"agent ID": 65, "type": "issue", "issue / pull request ID": 1, "url": "https://github.com/coinse/droidagent/issues/1", "status": "closed", "title": "I can't clonning this repository", "time": 20240305}
+{"agent ID": 65, "type": "issue", "issue / pull request ID": 2, "url": "https://github.com/coinse/droidagent/issues/2", "status": "open", "title": "Request for the Open-Sourcing of the Reimplemented Version of GPTDroid", "time": 20241127}
+{"agent ID": 65, "type": "issue", "issue / pull request ID": 3, "url": "https://github.com/coinse/droidagent/issues/3", "status": "open", "title": "Calling get_next_assistant_message() with function_call_option="none" and then parsing the response as if the function call was made", "time": 20250710}
+{"agent ID": 65, "type": "pull request", "issue / pull request ID": 4, "url": "https://github.com/coinse/droidagent/pull/4", "status": "closed", "title": "commit", "time": 20251118}
