@@ -2566,5 +2566,529 @@
       "1.1.2",
       "3.1"
     ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "1",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "100",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "200",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "300",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "400",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "500",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "600",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "700",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "50",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "150",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "250",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "350",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "450",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "550",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "650",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 8,
+    "times": 0,
+    "task name": "2",
+    "symptom": 4,
+    "locations": [
+      "2.7"
+    ]
+  },
+  {
+    "agent id": 9,
+    "times": 0,
+    "task name": "Open Chrome and search the PC-Agent paper.",
+    "symptom": 4,
+    "locations": [
+      "1.1.1",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 9,
+    "times": 1,
+    "task name": "Google the NBA champion team of 2024 on the Chrome",
+    "symptom": 4,
+    "locations": [
+      "1.1.1",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 9,
+    "times": 1,
+    "task name": "Google the introduction of Alibaba on the Chrome",
+    "symptom": 4,
+    "locations": [
+      "1.1.1",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Open Settings and switch your phone to dark mode",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Open the app store",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Open the calculator",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Check the time",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Check the weather",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 10,
+    "times": 0,
+    "task name": "Check tomorrow's date",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Open the calculator and compute 1 plus 1",
+    "symptom": 3,
+    "locations": [
+      "1.5"
+    ]
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Set the volume to maximum",
+    "symptom": 3,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Open the camera and flip it over",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 10,
+    "times": 0,
+    "task name": "Switch to power-saving mode",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 10,
+    "times": 1,
+    "task name": "Search for recent Lakers games",
+    "symptom": 3,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 10,
+    "times": 0,
+    "task name": "Turn down the sound to the minimum",
+    "symptom": 3,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 10,
+    "times": 2,
+    "task name": "Open Tiktok and brush five videos",
+    "symptom": 3,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Check the time",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Check the weather",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Check tomorrow's date",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Open Settings and switch your phone to dark mode",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Open the app store",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Open the calculator",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Open the calculator and compute 1 plus 1",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Open Tiktok and brush five videos",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Search for recent Lakers games",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Help me set an alarm for tomorrow morning at 8 o'clock",
+    "symptom": 4,
+    "locations": [
+      "1.1.2",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 11,
+    "times": 0,
+    "task name": "How much does a men's summer short sleeved shirt cost on Taobao",
+    "symptom": 4,
+    "locations": [
+      "1.1.2",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Install the Doubao APP",
+    "symptom": 3,
+    "locations": [
+      "1.1.2"
+    ]
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Open the camera and flip it over",
+    "symptom": 4,
+    "locations": [
+      "1.1.2",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Switch to power saving mode",
+    "symptom": 3,
+    "locations": [
+      "1.1.2"
+    ]
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "Turn down the sound to the minimum",
+    "symptom": 4,
+    "locations": [
+      "1.1.2",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 11,
+    "times": 1,
+    "task name": "What time is it in the UK now",
+    "symptom": 4,
+    "locations": [
+      "1.1.2",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Check_the_time",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Check the weather",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Check tomorrow's date",
+    "symptom": 4,
+    "locations": [
+      "1.5",
+      "2.3.2"
+    ]
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Open Settings and switch your phone to dark mode",
+    "symptom": 3,
+    "locations": [
+      "1.5"
+    ]
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Open the app store",
+    "symptom": 3,
+    "locations": [
+      "1.5"
+    ]
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Open the calculator",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Input hello world",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Open the calculator and compute 1 plus 1",
+    "symptom": 3,
+    "locations": [
+      "1.5"
+    ]
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Open the camera and flip it over",
+    "symptom": 3,
+    "locations": [
+      "1.5"
+    ]
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Search for recent Lakers games",
+    "symptom": -1,
+    "locations": []
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Switch to power saving mode",
+    "symptom": 3,
+    "locations": [
+      "1.5"
+    ]
+  },
+  {
+    "agent id": 12,
+    "times": 1,
+    "task name": "Turn down the sound to the minimum",
+    "symptom": 3,
+    "locations": [
+      "1.5"
+    ]
   }
 ]
