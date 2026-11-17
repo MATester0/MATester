@@ -12,7 +12,7 @@ The following information is included:
 
 ## Case studies
  
-We offer two typical cases exhibiting issues summarized in our study. One case illustrates Crash aroused by the united issues of the Peceptor and the Executor. And the other displays a severe traffic accident directly caused by the Planner and also revealing Perceptor issues.
+We offer two typical cases exhibiting issues summarized in our study. One case illustrates Crash aroused by the united issues of the Perceptor and the Executor. And the other displays a severe traffic accident directly caused by the Planner and also revealing Perceptor issues.
 
 ### A GUI automated M-agent that crashes because of issues in the Perceptor and the Executor
 
